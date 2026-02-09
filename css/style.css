@@ -1,0 +1,164 @@
+/*.element {
+    Позиционирование
+
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    Блочная модель
+
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid red;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+
+    Типографика
+
+    font-family: Arial;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: none;
+    color: red;
+
+    Оформление
+
+    background: red;
+    opacity: 1;
+
+    Анимации
+
+    transform: translateX(5px);
+    animation: shake 0.3s infinite;
+    */
+@font-face {
+  font-family: 'Inter-Bold';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'inter-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+
+  src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100vh;
+  margin: 0px;
+
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 8%);
+}
+
+
+p {
+  font-size: 20px;
+}
+
+footer{
+  position: sticky;
+  top: 100vh;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 500px;
+  height: 810px;
+  padding: 20px;
+
+  text-align: center;
+
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 12%);
+  
+}
+
+.jessica{
+  width: 120px;
+  height: 120px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.country{
+  margin-top: 10px;
+  margin-bottom: px;
+
+  color: hsl(75, 94%, 57%);
+}
+
+.table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 400px;
+}
+
+.table-button{
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+
+  gap: 20px;
+}
+
+.btn {
+  padding: 20px 0;
+
+  cursor: pointer;
+  transition: background 0.9s;
+
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 20%);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn:hover{
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
